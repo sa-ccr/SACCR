@@ -1,0 +1,18 @@
+Package: SACCR
+Type: Package
+Title: SA Counterparty Credit Risk under Basel III
+Version: 1.0
+Date: 2015-09-04
+Author: Tasos Grivas
+Maintainer: Tasos Grivas <info@openriskcalculator.com>
+Description: Computes the Exposure-At-Default based on standardized approach of
+    the Basel III Regulatory framework (SA-CCR). For the generation of the trades an
+    object-oriented solution has been created.
+License: GPL-3
+Imports: methods
+URL: www.openriskcalc.com
+Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R' 'Trade.R'
+        'Commodity.R' 'Credit.R' 'ExampleComm.R' 'ExampleCredit.R'
+        'ExampleFX.R' 'ExampleIRD.R' 'ExampleIRDCredit.R' 'FX.R'
+        'IRD.R' 'LoadSupervisoryData.R' 'runExampleCalcs.R'
+Built: R 3.2.2; ; 2015-10-04 17:39:16 UTC; windows
