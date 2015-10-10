@@ -15,4 +15,5 @@ Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R' 'Trade.R'
         'Commodity.R' 'Credit.R' 'ExampleComm.R' 'ExampleCredit.R'
         'ExampleFX.R' 'ExampleIRD.R' 'ExampleIRDCredit.R' 'FX.R'
         'IRD.R' 'LoadSupervisoryData.R' 'runExampleCalcs.R'
-Built: R 3.2.2; ; 2015-10-04 17:39:16 UTC; windows
+NeedsCompilation: no
+Packaged: 2015-10-10 16:22:22 UTC; tasos
