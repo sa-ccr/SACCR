@@ -4,10 +4,14 @@
 \alias{CalcRC}
 \title{Calculates the RC}
 \usage{
-CalcRC(trades)
+CalcRC(trades, coll_agreement, current_collateral)
 }
 \arguments{
 \item{trades}{The full list of the Trade Objects}
+
+\item{coll_agreement}{(Optional) The collateral Agreement object covering the trade list}
+
+\item{current_collateral}{(Optional) The current value of the collateral posted from the counterparty to the processing org}
 }
 \value{
 The replacement Cost and the sum of the MtMs

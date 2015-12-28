@@ -4,10 +4,12 @@
 \alias{CalcAddon}
 \title{Calculates the Addon amount}
 \usage{
-CalcAddon(trades)
+CalcAddon(trades, MF)
 }
 \arguments{
 \item{trades}{The full list of the Trade Objects}
+
+\item{MF}{(Optional) The Maturity Factor based on the collateral agreement}
 }
 \value{
 The aggregate amount of the addon summed up for all the asset classes
