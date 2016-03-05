@@ -1,20 +1,26 @@
 Package: SACCR
 Type: Package
 Title: SA Counterparty Credit Risk under Basel III
-Version: 1.1
-Date: 2015-12-24
+Version: 1.5
+Date: 2016-03-01
 Author: Tasos Grivas
 Maintainer: Tasos Grivas <info@openriskcalculator.com>
-Description: Computes the Exposure-At-Default based on standardized approach of
-    the Basel III Regulatory framework (SA-CCR). It also includes an object-oriented
-    solution for the generation of the trades.
+Description: Computes the Exposure-At-Default based on standardized approach
+    of the Basel III Regulatory framework (SA-CCR). Currently, trade types of all
+    the five major asset classes have been created and, given the inheritance-
+    based structure of the application, the addition of further trade types is
+    straightforward. The application automatically separates the trades on the
+    corresponding hedging and netting sets including the basis and volatility
+    transactions. All the examples appearing on the regulatory paper (including the
+    margined and the un-margined workflow) have been implemented.
 License: GPL-3
 Imports: methods
-URL: www.openriskcalc.com
+URL: www.openriskcalculator.com
 Collate: 'CSA.R' 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
-        'Trade.R' 'Commodity.R' 'Credit.R' 'ExampleComm.R'
-        'ExampleCredit.R' 'ExampleFX.R' 'ExampleIRD.R'
-        'ExampleIRDCommMargined.R' 'ExampleIRDCredit.R' 'FX.R' 'IRD.R'
-        'LoadSupervisoryData.R' 'runExampleCalcs.R'
+        'Trade.R' 'Swap.R' 'Commodity.R' 'Credit.R' 'ExampleBasisVol.R'
+        'ExampleComm.R' 'ExampleCredit.R' 'ExampleFX.R' 'ExampleIRD.R'
+        'ExampleIRDCommMargined.R' 'ExampleIRDCredit.R' 'FX.R'
+        'HandleBasisVol.R' 'Vol.R' 'IRD.R' 'LoadSupervisoryData.R'
+        'runExampleCalcs.R'
 NeedsCompilation: no
-Packaged: 2015-12-28 10:46:34 UTC; tasos
+Packaged: 2016-03-03 23:28:42 UTC; tasos
