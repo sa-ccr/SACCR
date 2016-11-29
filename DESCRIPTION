@@ -1,26 +1,34 @@
 Package: SACCR
 Type: Package
 Title: SA Counterparty Credit Risk under Basel III
-Version: 1.5
-Date: 2016-03-01
+Version: 2.1
+Date: 2016-11-27
 Author: Tasos Grivas
 Maintainer: Tasos Grivas <info@openriskcalculator.com>
 Description: Computes the Exposure-At-Default based on standardized approach
     of the Basel III Regulatory framework (SA-CCR). Currently, trade types of all
     the five major asset classes have been created and, given the inheritance-
-    based structure of the application, the addition of further trade types is
-    straightforward. The application automatically separates the trades on the
-    corresponding hedging and netting sets including the basis and volatility
-    transactions. All the examples appearing on the regulatory paper (including the
-    margined and the un-margined workflow) have been implemented.
+    based structure of the application, the addition of further trade types
+    is straightforward. The application returns a list of trees (one per CSA) after
+    automatically separating the trades based on the CSAs, the hedging sets, the
+    netting sets and the risk factors. The basis and volatility transactions are
+    also identified and treated in specific hedging sets whereby the corresponding 
+    penalty factors are applied. All the examples appearing on the
+    regulatory paper (including the margined and the un-margined workflow) have been
+    implemented.
 License: GPL-3
-Imports: methods
+Imports: methods,Trading,data.tree,jsonlite
 URL: www.openriskcalculator.com
-Collate: 'CSA.R' 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
-        'Trade.R' 'Swap.R' 'Commodity.R' 'Credit.R' 'ExampleBasisVol.R'
-        'ExampleComm.R' 'ExampleCredit.R' 'ExampleFX.R' 'ExampleIRD.R'
-        'ExampleIRDCommMargined.R' 'ExampleIRDCredit.R' 'FX.R'
-        'HandleBasisVol.R' 'Vol.R' 'IRD.R' 'LoadSupervisoryData.R'
-        'runExampleCalcs.R'
+Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
+        'ExampleBasisVol.R' 'ExampleComm.R' 'ExampleCredit.R'
+        'ExampleFX.R' 'ExampleIRD.R' 'ExampleIRDCommMargined.R'
+        'ExampleIRDCredit.R' 'HandleBasisVol.R' 'LoadSupervisoryData.R'
+        'runExampleCalcs.R' 'CalculateFactorMult.R'
+        'CreateTradeGraph.R' 'GroupCommTrades.R' 'GroupCreditTrades.R'
+        'GroupEquityTrades.R' 'GroupFXTrades.R' 'GroupIRDTrades.R'
+        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R'
 NeedsCompilation: no
-Packaged: 2016-03-03 23:28:42 UTC; tasos
+RoxygenNote: 5.0.1
+Packaged: 2016-11-27 21:55:14 UTC; tasos
+Repository: CRAN
+Date/Publication: 2016-11-28 13:26:21

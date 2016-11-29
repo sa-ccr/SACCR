@@ -1,0 +1,2 @@
+ID,thres_cpty,thres_PO,IM_cpty,IM_PO,MTA_cpty,MTA_PO,mpor_days,remargin_freq,Counterparty,Currency,TradeGroups,Values_type
+csa_1,0,0,0,0,5,5,10,5,cpty1,USD;EUR,IRD;Commodity,Actual
