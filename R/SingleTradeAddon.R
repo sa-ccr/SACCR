@@ -18,7 +18,7 @@ SingleTradeAddon = function(trade,MF)
   {
     # calculate maturity factor
     trade_results$maturity_factor <- trade$CalcMaturityFactor()
-  } else
+  } else if(!missing(MF)&!("Future" %in% getClassDef(class(trade))@refSuperClasses))
   { trade_results$maturity_factor = MF}
   # if the trade is option based then for the delta calculation the volatility will be used
   if(length(trade$TradeType)!=0)

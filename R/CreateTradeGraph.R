@@ -17,10 +17,13 @@ CreateTradeGraph <- function(trades)  {
   trade_classes_addon <- array(data<-0,dim<-length(trade_classes))
   
   head_node <- data.tree::Node$new("Trades Tree")
+  
+  asset_classes = head_node$AddChild("Asset Classes")
+  
   trade_classes_tree=list()
   
   for(i in 1:length(trade_classes))
-    trade_classes_tree[[i]] = head_node$AddChild(trade_classes[[i]])
+    trade_classes_tree[[i]] = asset_classes$AddChild(trade_classes[[i]])
   # going through each trade class
   
   for (i in 1:length(trade_classes))

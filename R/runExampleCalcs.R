@@ -1,5 +1,14 @@
 runExampleCalcs <-function(trades, csas, colls)
 {
+  if(length(trades)==length(unlist(lapply(trades,function(x) x$TradeType))))
+  {
+    if(all(unlist(lapply(trades,function(x) x$TradeType=='Option'&x$BuySell=='Sell'))))
+    { 
+      cat('All trades are sold options, EAD is zero')
+      return(0)
+    }
+  }
+  
   ext_trade_ids_temp = array()
   
   trade_trees = list()
@@ -50,15 +59,15 @@ runExampleCalcs <-function(trades, csas, colls)
       # calculating the RC and the V-c amount
     if(i>length(csas))
     {
-      trade_trees[[i]]$rc_values <- CalcRC(trades_temp[[i]])
+      trade_trees[[i]]$`Replacement Cost` <- CalcRC(trades_temp[[i]])
     }else
-    {      trade_trees[[i]]$rc_values <- CalcRC(trades_temp[[i]], csas[[i]], colls)   }
+    {      trade_trees[[i]]$`Replacement Cost` <- CalcRC(trades_temp[[i]], csas[[i]], colls)   }
       
       # calculating the PFE after multiplying the addon with a factor if V-C<0
-    trade_trees[[i]]$PFE <- CalcPFE(trade_trees[[i]]$rc_values$V_C, trade_trees[[i]]$addon)
+    trade_trees[[i]]$PFE <- CalcPFE(trade_trees[[i]]$`Replacement Cost`$V_C, trade_trees[[i]]$addon)
       
       # calculating the Exposure-at-Default
-    trade_trees[[i]]$EAD <- CalcEAD(trade_trees[[i]]$rc_values$RC,trade_trees[[i]]$PFE)
+    trade_trees[[i]]$EAD <- CalcEAD(trade_trees[[i]]$`Replacement Cost`$RC,trade_trees[[i]]$PFE)
   }
   return(trade_trees)
 }
