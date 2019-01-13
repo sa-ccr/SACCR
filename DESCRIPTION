@@ -26,7 +26,7 @@ Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
         'runExampleCalcs.R' 'CalculateFactorMult.R'
         'CreateTradeGraph.R' 'GroupCommTrades.R' 'GroupCreditTrades.R'
         'GroupEquityTrades.R' 'GroupFXTrades.R' 'GroupIRDTrades.R'
-        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R'
+        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R' 'onLoad.R'
 NeedsCompilation: no
 RoxygenNote: 5.0.1
 Packaged: 2016-11-27 21:55:14 UTC; tasos
