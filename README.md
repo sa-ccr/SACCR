@@ -11,3 +11,9 @@ A few words about the code:
 4.  All the examples of the regulatory paper have been implemented (ExampleIRD.R contains the code for the IRDs case etc)
 
 If you want to become a contributor to this project, use this code for commercial purposes or for any other queries please contact us at info@openriskcalculator.com or visit our website www.openriskcalculator.com
+
+# Donate 
+
+If you have found this software of use, please consider supporting us by donating below:
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8HBDDB9MHXUTA)
