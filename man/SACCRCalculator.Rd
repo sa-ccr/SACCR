@@ -16,10 +16,10 @@ SACCRCalculator(trades_filename, csa_filename, coll_filename, JSON = FALSE)
 \item{JSON}{(optional) if TRUE it returns a json string}
 }
 \value{
-The exposure at default (expected value based on the Basel paper is 569)
+A tree structure depicting the add-on calculations on different hedging/netting sets
 }
 \description{
-Returns a tree structure depicting the add-on calculations on different hedging/netting sets
+The main function of the package which receives in csv format the trades, the CSAs and the colletaral amounts that have already been exchanged
 }
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>

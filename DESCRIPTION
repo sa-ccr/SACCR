@@ -1,8 +1,8 @@
 Package: SACCR
 Type: Package
 Title: SA Counterparty Credit Risk under Basel III
-Version: 2.1
-Date: 2016-11-27
+Version: 2.3
+Date: 2019-01-12
 Author: Tasos Grivas
 Maintainer: Tasos Grivas <info@openriskcalculator.com>
 Description: Computes the Exposure-At-Default based on standardized approach
@@ -15,9 +15,9 @@ Description: Computes the Exposure-At-Default based on standardized approach
     also identified and treated in specific hedging sets whereby the corresponding 
     penalty factors are applied. All the examples appearing on the
     regulatory paper (including the margined and the un-margined workflow) have been
-    implemented.
+    implemented including the latest FAQ enhancements.
 License: GPL-3
-Imports: methods,Trading,data.tree,jsonlite
+Imports: methods, data.tree, jsonlite, Trading
 URL: www.openriskcalculator.com
 Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
         'ExampleBasisVol.R' 'ExampleComm.R' 'ExampleCredit.R'
@@ -26,9 +26,12 @@ Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
         'runExampleCalcs.R' 'CalculateFactorMult.R'
         'CreateTradeGraph.R' 'GroupCommTrades.R' 'GroupCreditTrades.R'
         'GroupEquityTrades.R' 'GroupFXTrades.R' 'GroupIRDTrades.R'
-        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R' 'onLoad.R'
+        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R'
 NeedsCompilation: no
 RoxygenNote: 5.0.1
-Packaged: 2016-11-27 21:55:14 UTC; tasos
+Packaged: 2019-01-12 19:17:03 UTC; rforge
 Repository: CRAN
-Date/Publication: 2016-11-28 13:26:21
+Date/Publication: 2019-01-13 12:20:03 UTC
+Repository/R-Forge/Project: ccr
+Repository/R-Forge/Revision: 25
+Repository/R-Forge/DateTimeStamp: 2019-01-12 18:50:18

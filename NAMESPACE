@@ -1,4 +1,5 @@
 importFrom("methods","setRefClass")
+importFrom("methods", "getClassDef")
 export(CalcAddon)
 export(CalcEAD)
 export(CalcPFE)
