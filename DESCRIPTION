@@ -1,24 +1,24 @@
 Package: SACCR
 Type: Package
-Title: SA Counterparty Credit Risk under Basel III
-Version: 2.3
-Date: 2019-01-12
+Title: SA Counterparty Credit Risk under CRR2
+Version: 3.0
+Date: 2020-08-11
 Author: Tasos Grivas
 Maintainer: Tasos Grivas <info@openriskcalculator.com>
-Description: Computes the Exposure-At-Default based on standardized approach
-    of the Basel III Regulatory framework (SA-CCR). Currently, trade types of all
-    the five major asset classes have been created and, given the inheritance-
+Description: Computes the Exposure-At-Default based on  the standardized approach
+    of CRR2 (SA-CCR). The simplified version of SA-CCR has been included, as well as the OEM methodology.
+	Multiple trade types of all the five major asset classes are being supported including the 'Other' Exposure and, given the inheritance-
     based structure of the application, the addition of further trade types
-    is straightforward. The application returns a list of trees (one per CSA) after
-    automatically separating the trades based on the CSAs, the hedging sets, the
+    is straightforward. The application returns a list of trees per Counterparty and CSA after
+    automatically separating the trades based on the Counterparty, the CSAs, the hedging sets, the
     netting sets and the risk factors. The basis and volatility transactions are
     also identified and treated in specific hedging sets whereby the corresponding 
     penalty factors are applied. All the examples appearing on the
-    regulatory paper (including the margined and the un-margined workflow) have been
-    implemented including the latest FAQ enhancements.
+    regulatory papers (both for the margined and the un-margined workflow) have been
+    implemented including the latest CRR2 developments.
 License: GPL-3
 Imports: methods, data.tree, jsonlite, Trading
-URL: www.openriskcalculator.com
+URL: https://openriskcalculator.com/
 Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
         'ExampleBasisVol.R' 'ExampleComm.R' 'ExampleCredit.R'
         'ExampleFX.R' 'ExampleIRD.R' 'ExampleIRDCommMargined.R'
@@ -26,12 +26,7 @@ Collate: 'CalcAddon.R' 'CalcEAD.R' 'CalcPFE.R' 'CalcRC.R'
         'runExampleCalcs.R' 'CalculateFactorMult.R'
         'CreateTradeGraph.R' 'GroupCommTrades.R' 'GroupCreditTrades.R'
         'GroupEquityTrades.R' 'GroupFXTrades.R' 'GroupIRDTrades.R'
-        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R'
+        'GroupTrades.R' 'SACCRCalculator.R' 'SingleTradeAddon.R' 'onLoad.R'
+		'DetermineCCRMethodology.R' 'GroupOtherTrades.R'
 NeedsCompilation: no
-RoxygenNote: 5.0.1
-Packaged: 2019-01-12 19:17:03 UTC; rforge
-Repository: CRAN
-Date/Publication: 2019-01-13 12:20:03 UTC
-Repository/R-Forge/Project: ccr
-Repository/R-Forge/Revision: 25
-Repository/R-Forge/DateTimeStamp: 2019-01-12 18:50:18
+RoxygenNote: 7.1.1

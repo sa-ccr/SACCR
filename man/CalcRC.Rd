@@ -4,7 +4,7 @@
 \alias{CalcRC}
 \title{Calculates the RC}
 \usage{
-CalcRC(trades, csa, collaterals)
+CalcRC(trades, csa, collaterals, simplified)
 }
 \arguments{
 \item{trades}{The full list of the Trade Objects}
@@ -12,6 +12,8 @@ CalcRC(trades, csa, collaterals)
 \item{csa}{(Optional) The CSA objects}
 
 \item{collaterals}{(Optional) The collaterals Objects}
+
+\item{simplified}{(optional) When TRUE, collaterals will be ignored as per the simplified & OEM approach}
 }
 \value{
 The replacement Cost and the sum of the MtMs
@@ -19,11 +21,10 @@ The replacement Cost and the sum of the MtMs
 \description{
 Calculates the Replacement Cost(RC) and the sum of the MtMs for all the trades
 }
+\references{
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
+}
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-\references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
-}
-

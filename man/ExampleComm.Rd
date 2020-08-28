@@ -15,11 +15,10 @@ The exposure at default (expected value based on the Basel paper is 5406)
 \description{
 Calculates the Exposure at Default for the Commodities example as given in the Basel III regulatory paper
 }
-\author{
-Tasos Grivas <tasos@openriskcalculator.com>
-}
 \references{
 Basel Committee: The standardised approach for measuring counterparty credit risk exposures
 http://www.bis.org/publ/bcbs279.htm
 }
-
+\author{
+Tasos Grivas <tasos@openriskcalculator.com>
+}

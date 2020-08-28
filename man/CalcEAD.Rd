@@ -21,11 +21,10 @@ Calculates the Exposure at Default
 #returns 1.4*(60+500) = 784
 EAD <- CalcEAD(60,500)
 }
+\references{
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
+}
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-\references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
-}
-

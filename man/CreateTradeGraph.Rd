@@ -18,4 +18,3 @@ Creates a tree-like structure describing the various hedging sets / risk factors
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-

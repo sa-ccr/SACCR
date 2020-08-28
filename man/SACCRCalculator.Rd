@@ -4,7 +4,15 @@
 \alias{SACCRCalculator}
 \title{SA-CCR Calculator}
 \usage{
-SACCRCalculator(trades_filename, csa_filename, coll_filename, JSON = FALSE)
+SACCRCalculator(
+  trades_filename,
+  csa_filename,
+  coll_filename,
+  JSON = FALSE,
+  simplified = FALSE,
+  OEM = FALSE,
+  export_results = FALSE
+)
 }
 \arguments{
 \item{trades_filename}{a .csv file containing the trades}
@@ -14,18 +22,23 @@ SACCRCalculator(trades_filename, csa_filename, coll_filename, JSON = FALSE)
 \item{coll_filename}{a .csv file containing collaterals}
 
 \item{JSON}{(optional) if TRUE it returns a json string}
+
+\item{simplified}{(optional) if TRUE, the simplified SA-CCR is being calculated}
+
+\item{OEM}{(optional) if TRUE, the Original Exposure Method is being calculated}
+
+\item{export_results}{(optional) if TRUE, a csv with the exposure at the top level will be exported}
 }
 \value{
-A tree structure depicting the add-on calculations on different hedging/netting sets
+The relevant exposure trees
 }
 \description{
-The main function of the package which receives in csv format the trades, the CSAs and the colletaral amounts that have already been exchanged
+Returns a tree structure depicting the add-on calculations on different hedging/netting sets
+}
+\references{
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
 }
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-\references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
-}
-

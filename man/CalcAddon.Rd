@@ -4,12 +4,16 @@
 \alias{CalcAddon}
 \title{Calculates the Addon amount}
 \usage{
-CalcAddon(trades_tree, MF)
+CalcAddon(trades_tree, MF, simplified = FALSE, OEM = FALSE)
 }
 \arguments{
 \item{trades_tree}{A tree structure with the input trades}
 
 \item{MF}{(Optional) The Maturity Factor based on the collateral agreement}
+
+\item{simplified}{(optional) When TRUE, the add-ons will be calculated as per the simplified SA-CCR}
+
+\item{OEM}{(optional) When TRUE, the add-ons will be calculated as per the Original Exposure Method}
 }
 \value{
 The aggregate amount of the addon summed up for all the asset classes
@@ -17,11 +21,10 @@ The aggregate amount of the addon summed up for all the asset classes
 \description{
 Calculates the  amount of the addon for each heding/nettting set
 }
+\references{
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
+}
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-\references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
-}
-

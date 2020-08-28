@@ -13,11 +13,10 @@ A data frame with the required data
 Loads the supervisory data (factors, correlation and option volatility)
 for each Asset Class and SubClass
 }
+\references{
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
+}
 \author{
 Tasos Grivas <tasos@openriskcalculator.com>
 }
-\references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
-}
-

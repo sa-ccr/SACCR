@@ -4,12 +4,14 @@
 \alias{CalcPFE}
 \title{Calculates the PFE}
 \usage{
-CalcPFE(V_C, Addon_Aggregate)
+CalcPFE(V_C, Addon_Aggregate, simplified)
 }
 \arguments{
 \item{V_C}{the difference between the sum of the MtMs and the collateral}
 
 \item{Addon_Aggregate}{the aggregate amount of the Addon}
+
+\item{simplified}{(optional) When TRUE, the multiplier will be set to 1  as per the simplified & OEM approach}
 }
 \value{
 The Projected Future Exposure (PFE)
@@ -18,11 +20,10 @@ The Projected Future Exposure (PFE)
 Calculates the Projected Future Exposure (PFE) after applying the relevant multiplier.
 The purpose of this multiplier is to lessen the risk stemming from the addons in case of excess collateral
 }
-\author{
-Project team <info@openriskcalculator.com>
-}
 \references{
-Basel Committee: The standardised approach for measuring counterparty credit risk exposures
-http://www.bis.org/publ/bcbs279.htm
+Regulation (EU) 2019/876 of the European Parliament and of the Council of 20 May 2019
+http://data.europa.eu/eli/reg/2019/876/oj
 }
-
+\author{
+Tasos Grivas <info@openriskcalculator.com>
+}
