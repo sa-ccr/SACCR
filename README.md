@@ -1,7 +1,7 @@
 # SACCR
 R package implementing the SA-CCR included in CRR2
 
-This repository contains a full implementation of the Basel III Standardized Approach for Counterparty Credit Risk Management. (you can view the regulation here: http://www.bis.org/publ/bcbs279.htm). Also, the follow up FAQ improvements have been implemented.
+This repository contains a full implementation of the CRR2 Standardized Approach for Counterparty Credit Risk Management. 
 
 Computes the Exposure-At-Default based on  the standardized approach
     of CRR2 (SA-CCR). The simplified version of SA-CCR has been included, as well as the OEM methodology.
