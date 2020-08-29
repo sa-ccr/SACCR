@@ -1,7 +1,5 @@
 # SACCR
-R package implementing the SA-CCR included in CRR2
-
-This repository contains a full implementation of the CRR2 Standardized Approach for Counterparty Credit Risk Management. 
+R package implementing the SA-CCR methodology included in CRR2
 
 Computes the Exposure-At-Default based on  the standardized approach
     of CRR2 (SA-CCR). The simplified version of SA-CCR has been included, as well as the OEM methodology.
