@@ -2,7 +2,7 @@
 R package implementing the SA-CCR methodology included in CRR2
 
 Computes the Exposure-At-Default based on  the standardized approach
-    of CRR2 (SA-CCR). The simplified version of SA-CCR has been included, as well as the OEM methodology.
+    of CRR2 (SA-CCR). Apart from the standard version, the simplified version of SA-CCR has also been included, as well as the OEM methodology.
 	Multiple trade types of all the five major asset classes are being supported including the 'Other' Exposure and, given the inheritance-
     based structure of the application, the addition of further trade types
     is straightforward. The application returns a list of trees per Counterparty and CSA after
