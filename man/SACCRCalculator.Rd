@@ -11,7 +11,8 @@ SACCRCalculator(
   JSON = FALSE,
   simplified = FALSE,
   OEM = FALSE,
-  export_results = FALSE
+  export_results = FALSE,
+  ignore_margin = FALSE
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ SACCRCalculator(
 \item{OEM}{(optional) if TRUE, the Original Exposure Method is being calculated}
 
 \item{export_results}{(optional) if TRUE, a csv with the exposure at the top level will be exported}
+
+\item{ignore_margin}{(optional) if TRUE, the margin agreement workflow will be turned off}
 }
 \value{
 The relevant exposure trees

@@ -4,7 +4,7 @@
 \alias{CalcRC}
 \title{Calculates the RC}
 \usage{
-CalcRC(trades, csa, collaterals, simplified)
+CalcRC(trades, csa, collaterals, simplified, ignore_margin = FALSE)
 }
 \arguments{
 \item{trades}{The full list of the Trade Objects}
@@ -14,6 +14,8 @@ CalcRC(trades, csa, collaterals, simplified)
 \item{collaterals}{(Optional) The collaterals Objects}
 
 \item{simplified}{(optional) When TRUE, collaterals will be ignored as per the simplified & OEM approach}
+
+\item{ignore_margin}{(optional) if TRUE, the margin agreement workflow will be turned off}
 }
 \value{
 The replacement Cost and the sum of the MtMs
